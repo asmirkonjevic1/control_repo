@@ -1,3 +1,6 @@
 class profile::web {
-  include nginx
+  file {'/root/fajl':
+    ensure => file,
+    content => 'this is test',
+  }
 }
